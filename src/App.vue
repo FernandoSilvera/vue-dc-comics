@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <TheHeader />
+    <BannerSignUp />
   </div>
 </template>
 
 <script>
 import TheHeader from './components/TheHeader.vue'
+import BannerSignUp from './components/BannerSignUp.vue'
 
 export default {
   name: 'App',
   components: {
-    TheHeader
+    TheHeader,
+    BannerSignUp
   }
 }
 </script>

@@ -2,11 +2,11 @@
   <header>
     <div class="container">
       <nav class="row justify-content-between py-4">
-        <div class="col-2 main-logo">
+        <div class="col d-flex justify-content-start">
           <img src="/img/dc-logo.png" alt="Logo DC">
         </div>
 
-        <div class="col-8 d-flex align-items-center">
+        <div class="col-8 d-flex justify-content-end align-items-center">
           <ul class="nav list-unstyled my-nav">
           <li v-for="(link, i) in navLinks" :key="i">
             <a class="p-3 text-uppercase" :href="link.href">{{ link.name }}</a>
@@ -71,11 +71,7 @@ export default {
 </script>
 
 
-<style lang="scss">
-  .main-logo {
-    width: 75px;
-  }
-
+<style lang="scss" scoped>
   .my-nav {
     font-size: 12px;
     font-weight: bold;
