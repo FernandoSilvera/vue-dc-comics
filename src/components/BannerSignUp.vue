@@ -12,7 +12,7 @@
           </div>
 
           <div class="col flex-grow-0" v-for="(image, i) in images"  :key="i">
-            <img :src="`img/footer-${image}.png`" alt="">
+            <img :src="`img/footer-${image}.png`" :alt="`${image} logo`">
           </div>
         </div>
       </div>
@@ -25,7 +25,13 @@ export default {
   name: 'BannerSignUp',
   data() {
     return {
-      images: ['facebook', 'twitter', 'youtube', 'pinterest', 'periscope']
+      images: [
+        'facebook',
+        'twitter',
+        'youtube',
+        'pinterest',
+        'periscope',
+      ]
     }
   }
 }
