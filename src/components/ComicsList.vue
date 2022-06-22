@@ -1,15 +1,17 @@
 <template>
-  <div class="container">
-    <div class="row flex-wrap">
-      <div class="col-2" v-for="(item, i) in comicsList" :key="i">
-        <ComicCard
-        :card-thumb="item.thumb"
-        :card-series="item.series"
-        >
-        </ComicCard>
+  <section class="bg-dark py-5">
+    <div class="container">
+      <div class="row flex-wrap">
+        <div class="col-2" v-for="(item, i) in comicsList" :key="i">
+          <ComicCard
+          :card-thumb="item.thumb"
+          :card-series="item.series"
+          >
+          </ComicCard>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
