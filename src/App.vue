@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <TheHeader />
+    <ComicsList />
     <TheFooter />
     <BannerSignUp />
   </div>
@@ -8,6 +9,7 @@
 
 <script>
 import TheHeader from './components/TheHeader.vue'
+import ComicsList from './components/ComicsList.vue'
 import TheFooter from './components/TheFooter.vue'
 import BannerSignUp from './components/BannerSignUp.vue'
 
@@ -15,6 +17,7 @@ export default {
   name: 'App',
   components: {
     TheHeader,
+    ComicsList,
     TheFooter,
     BannerSignUp
   }
